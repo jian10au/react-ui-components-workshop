@@ -1,0 +1,65 @@
+{
+  "name": "react-ui-components-workshop",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "tslint": "tslint",
+    "lint": "tslint -c tslint.json --project tsconfig.json",
+    "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:prod": "NODE_ENV=production start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "yarn lint && yarn build",
+    "pack": "pack-zip"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-info": "^4.0.7",
+    "@storybook/addon-knobs": "^4.0.7",
+    "@storybook/addon-links": "^4.0.7",
+    "@storybook/addon-viewport": "^4.0.7",
+    "@storybook/addons": "^4.0.7",
+    "@storybook/react": "^4.0.7",
+    "@types/react": "16.7.6",
+    "@types/react-dom": "^16.0.9",
+    "@types/storybook__addon-actions": "^3.4.1",
+    "@types/storybook__react": "^4.0.0",
+    "@types/webpack": "^4.4.19",
+    "@types/webpack-env": "^1.13.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "pack-zip": "^0.2.2",
+    "react": "16.6.3",
+    "react-docgen-typescript-loader": "^3.0.0",
+    "react-dom": "16.6.3",
+    "react-scripts": "^2.1.1",
+    "rimraf": "^2.6.2",
+    "ts-loader": "^5.3.0",
+    "tslint": "^5.11.0",
+    "tslint-immutable": "^4.9.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.26.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "dependencies": {
+    "emotion": "^9.2.12",
+    "polished": "2.3.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxue89/react-ui-components-workshop.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/fxue89/react-ui-components-workshop/issues"
+  },
+  "homepage": "https://github.com/fxue89/react-ui-components-workshop#readme"
+}
