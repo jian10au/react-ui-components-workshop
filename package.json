@@ -8,7 +8,7 @@
     "tslint": "tslint",
     "lint": "tslint -c tslint.json --project tsconfig.json",
     "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 6006",
     "storybook:prod": "NODE_ENV=production start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
     "build": "rm -rf ./lib && tsc",
@@ -47,7 +47,8 @@
     "webpack-hot-middleware": "^2.24.3"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.5",
+    "@emotion/core": "^0.13.1",
+    "glamor": "^2.20.40",
     "polished": "2.3.1"
   },
   "directories": {
