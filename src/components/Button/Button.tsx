@@ -1,10 +1,10 @@
-import * as React from "react";
-import { css } from "glamor";
+import * as React from 'react';
+import { css } from 'glamor';
 
-export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {}
+export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> { }
 
 const buttonStyle = css({
-  WebkitAppearance: "none"
+  WebkitAppearance: 'none'
 });
 
 const Button = (props: ButtonProps) => (
