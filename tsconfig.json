@@ -23,11 +23,9 @@
       "index.d.ts",
       "node_modules/@types"
     ],
-    "plugins": [
-      {
-        "name": "tslint-language-service"
-      }
-    ]
+    "plugins": [{
+      "name": "tslint-language-service"
+    }]
   },
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
@@ -38,10 +36,7 @@
     "./src/**/*.ts"
   ],
   "exclude": [
-    "dist",
-    "build",
     "node_modules",
-    "./src/**/*.stories.tsx",
-    "./src/components/demo/"
+    "./src/**/*.stories.tsx"
   ]
 }
