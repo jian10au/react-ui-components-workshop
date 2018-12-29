@@ -8,8 +8,8 @@ import Input from './Input';
 storiesOf('ui', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .add('Input', () =>
-    <Input
-      label={text('label', 'First Name')}
-    />
-  );
+  .add('Input', () => {
+    const defaultValue = text('value', 'James');
+    const [value, setValue] = React.useState(defaultValue);
+    return <Input label={text('label', 'First Name')} value={value} onChange={e => setValue(e.currentTarget.value)} />
+  });
