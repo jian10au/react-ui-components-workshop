@@ -12,13 +12,13 @@
 **Button.stories.tsx**
 * Add knob to change Button props
 
-### Second component: Text Input
-* STEP1: Add Input folder and create a text input component (`<label>`, `<input>`)
-* STEP2: Style text input (hover, focused)
+### Second component: Input
+* STEP1: Add Input folder and create an input component (`<label>`, `<input>`)
+* STEP2: Style the input (hover, focused)
 * STEP3: Add state to store input value, and update state on input
 * STEP4: Add props to change field validation status
 * STEP5: Add constants/enums for shared dimentions
-* STEP6: Export Text Input
+* STEP6: Export the input
 * *Something to think about: number, email, password inputs?*
 
 **Input story**
