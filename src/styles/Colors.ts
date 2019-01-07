@@ -1,5 +1,5 @@
 export enum Colors {
-    UIBlue = '#0d3880',
-    UIPink = '#e60278',
-    UIGreen = '#3fa833',
+    UIBlue = 'hsl(200, 80%, 30%)',
+    UIPink = 'hsl(320, 80%, 30%)',
+    UIWhite = 'hsl(0, 100%, 100%)',
 }
