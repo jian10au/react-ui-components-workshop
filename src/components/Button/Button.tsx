@@ -36,10 +36,11 @@ const style = color => css({
 });
 
 const Button = (props: ButtonProps) => {
+  const { className, children, ...otherProps } = props;
   const color = props.primary ? Colors.UIPink : Colors.UIBlue;
 
   return (
-    <button className={`${style(color)}`}>{props.children}</button>
+    <button className={`${style(color)} ${className}`} {...otherProps}>{children}</button>
   )
 };
 
